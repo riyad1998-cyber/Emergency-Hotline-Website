@@ -63,7 +63,17 @@ for (let i = 0; i < buttons.length; i++) {
     handleCall(serviceName, serviceNumber);
   });
 }
+// copy part
+let copyCount = 0;
+const copyDisplay = document.querySelector('.navbar-copy span');
+const copyButtons = document.querySelectorAll('.copy-btn');
 
+for (let i = 0; i < copyButtons.length; i++) {
+  copyButtons[i].addEventListener('click', function () {
+    copyCount++;
+    copyDisplay.innerText = copyCount;
+  });
+}
 
 
 
