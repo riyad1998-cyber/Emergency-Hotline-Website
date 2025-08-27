@@ -74,7 +74,11 @@ for (let i = 0; i < copyButtons.length; i++) {
     copyDisplay.innerText = copyCount;
   });
 }
-
+// JS to clear call history
+document.getElementById('clear-history').addEventListener('click', function () {
+  const historyList = document.querySelector('.call-history-list');
+  historyList.innerHTML = '';
+});
 
 
 
