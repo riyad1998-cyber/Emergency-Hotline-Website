@@ -7,7 +7,7 @@ Anser to the question no: 02
 
 To create and insert a new element into the DOM,we first use document.createElement() to make the element we want.Then we can add content to it to using innerText or innerHTML.After that, we need to decide where in the page we want it to show and use appendChild() to place it inside a parent element.
 
-Answer to question no: 03
+Answer to the question no: 03
 
 Event Bubbling is a process when a event happens on a child element,it automatically also happens on its parent elements and then on higher elements.For example, if we click button on a div,the click first happens on the button, then on the div and then on the elements above it.It moves automatically from the inside element to the outside elements.
 
