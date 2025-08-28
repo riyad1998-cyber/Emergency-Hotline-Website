@@ -64,25 +64,26 @@ for (let i = 0; i < buttons.length; i++) {
   });
 }
 // copy part
-
-let copyCount = 0;
-const copyDisplay = document.querySelector('.navbar-copy span');
-const copyButtons= document.querySelectorAll('.copy-btn');
-for (const button of copyButtons) {
-  button.addEventListener('click', function() {
-    const card= button.closest('.card');
-    const numberElement =card.querySelector('.service-number');
+let copyCount=0;
+let copyDisplay= document.querySelector('.navbar-copy span');
+let copyButtons= document.querySelectorAll('.copy-btn');
+for (let i= 0; i< copyButtons.length; i++){
+  let button = copyButtons[i];
+  button.onclick=function(){
+    let card = this.parentNode.parentNode;
+    let numberElement= card.querySelector('.service-number');
     if (numberElement) {
-      const number= numberElement.innerText;
+      let number =numberElement.innerText;
+      navigator.clipboard.writeText(number);
       copyCount++;
-      copyDisplay.innerText=copyCount;
-      alert(`The number has been copied: ${number}`);
+      copyDisplay.innerText = copyCount;
+      alert("The number has been copied: " +number);
     }
-  });
+  };
 }
 
 // JS to clear call history
-document.getElementById('clear-history').addEventListener('click', function () {
+document.getElementById('clear-history').addEventListener('click',function(){
   const historyList= document.querySelector('.call-history-list');
   historyList.innerHTML= '';
 });
