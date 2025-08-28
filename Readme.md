@@ -17,6 +17,6 @@ Event Delegation is a method in javaScript where we adding event listeners to ma
 
 Answer to the question no: 05 
 
-preventDefault() stops the browser from doing reloading.For example,when we click a submit button in a form,the browser reload the page after submission.But if we use preventDefault(),the page did not reload.
+preventDefault() stops the browser from doing reloading.For example,when we click a submit button in a form,the browser reload the page after submission.But if we use preventDefault(),the page did not reload but still update the value.
 
 stopPropagation() stops an event from going to parent elements.For example,if we click a button in a box,normally the box also reacts but with stopPropagation() only the button react.

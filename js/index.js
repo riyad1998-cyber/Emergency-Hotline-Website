@@ -9,8 +9,8 @@ for (let btn of heartButtons) {
     heartCount.innerText = count;
   }
 }
-// Coin element in navbar
 
+// Coin element in navbar
 let coins =100; 
 const coinDisplay =document.querySelector('.coin-display');
 const callHistorySection= document.querySelector('.call-history-list');
@@ -63,6 +63,7 @@ for (let i = 0; i < buttons.length; i++) {
     handleCall(serviceName, serviceNumber);
   });
 }
+
 // copy part
 let copyCount=0;
 let copyDisplay= document.querySelector('.navbar-copy span');
